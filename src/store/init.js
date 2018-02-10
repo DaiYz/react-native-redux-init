@@ -1,5 +1,4 @@
 import {handleActions} from "redux-actions"
-import {AsyncStorage,Platform,Alert} from "react-native"
 
 const initialState = {
     init:false
@@ -7,7 +6,15 @@ const initialState = {
 
 export default handleActions({
     ACCOUNT_INIT: (state, action) => {
-        return Object.assign({init: true}, action.payload)
+        return Object.assign({init: true},{})
     },
 
 }, initialState);
+
+
+export const init = () => async(dispatch, getState) => {
+    dispatch({
+        type:'ACCOUNT_INIT'
+    });
+    console.log('hello world')
+};

@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, combineReducers, bindActionCreators } from 'redux';
 import thunk from 'redux-thunk';
-import init from './src/store/init'
+import account from './src/store/init'
 
 const loggerMiddleware = store => next => action => {
     console.log(action);
@@ -8,7 +8,7 @@ const loggerMiddleware = store => next => action => {
 };
 
 const reducers = {
-    init
+    account
 };
 
 //第三方改造

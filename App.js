@@ -5,25 +5,21 @@
  */
 
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
 import Wrapper from './src/Wrapper'
 import store from './store'
+import {init} from './src/store/init'
 import { Provider, connect } from 'react-redux'
-import { createStore, applyMiddleware, combineReducers, bindActionCreators } from 'redux'
+import { bindActionCreators } from 'redux'
+import  routes from './src/routes'
 
 const ConnectedWrapper = connect(
 
   (store) => ({
-      init: store.init,
+      account: store.account,
   }),
 
   (dispatch) => bindActionCreators({
-
+  init
   }, dispatch)
 
 )(Wrapper);
@@ -34,7 +30,7 @@ class App extends Component {
     render () {
         return (
             <Provider store={store}>
-              <ConnectedWrapper />
+              <ConnectedWrapper  />
             </Provider>
         );
     }
