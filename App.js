@@ -5,7 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import Wrapper from './src/Wrapper'
+import Wrapper from './src/components/Wrapper'
 import store from './store'
 import {init} from './src/store/init'
 import { Provider, connect } from 'react-redux'
@@ -30,7 +30,7 @@ class App extends Component {
     render () {
         return (
             <Provider store={store}>
-              <ConnectedWrapper  />
+              <ConnectedWrapper routes={routes} />
             </Provider>
         );
     }

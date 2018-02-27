@@ -1,9 +1,8 @@
 import React,{Component} from 'react';
 import { StyleSheet, View,TouchableWithoutFeedback} from 'react-native';
-import  Router  from './Route';
-import  Home from './components/Home/Home'
-import  LoginScreen from './components/Account/Login'
-import { addNavigationHelpers, StackNavigator } from 'react-navigation';
+import  Home from './Home/Home'
+import  LoginScreen from './Account/Login'
+import { createNavigationContainer, StackNavigator,NavigationActions} from 'react-navigation';
 
 
 
@@ -31,12 +30,13 @@ export const AppNavigator = StackNavigator({
         init()
     };
 
+
+
     render() {
         const {routes,init,account}=this.props;
+        console.log(this.props);
         return (
-            <AppNavigator
-                account={account}
-            />
+            <AppNavigator />
         );
     }
 }

@@ -1,5 +1,6 @@
 import { createStore, applyMiddleware, combineReducers, bindActionCreators } from 'redux';
 import thunk from 'redux-thunk';
+
 import account from './src/store/init'
 
 const loggerMiddleware = store => next => action => {
