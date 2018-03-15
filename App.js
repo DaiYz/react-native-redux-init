@@ -12,6 +12,22 @@ import { Provider, connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import  routes from './src/routes'
 
+
+
+if (!__DEV__) {
+    global.console = {
+        info: () => {
+        },
+        log: () => {
+        },
+        warn: () => {
+        },
+        error: () => {
+        },
+    };
+}
+
+
 const ConnectedWrapper = connect(
 
   (store) => ({

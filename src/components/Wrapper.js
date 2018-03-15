@@ -13,13 +13,6 @@ export const AppNavigator = StackNavigator({
             header:null
         }
     },
-    Login: {
-        screen:LoginScreen,
-        navigationOptions:{
-            header:null
-        }
-
-    },
 });
 
 

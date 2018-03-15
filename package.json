@@ -9,15 +9,16 @@
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.51.0",
-    "react-native-camera": "git+https://git@github.com/react-native-community/react-native-camera",
     "react-native-deprecated-custom-components": "github:facebookarchive/react-native-custom-components",
     "react-native-elements": "^0.19.0",
+    "react-native-linear-gradient": "^2.4.0",
     "react-native-vector-icons": "^4.5.0",
     "react-navigation": "^1.0.3",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.2.1"
   },
   "devDependencies": {
     "babel-jest": "22.2.0",

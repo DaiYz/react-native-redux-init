@@ -2,6 +2,9 @@ import { createStore, applyMiddleware, combineReducers, bindActionCreators } fro
 import thunk from 'redux-thunk';
 
 import account from './src/store/init'
+// ......
+//引入多个reducer
+
 
 const loggerMiddleware = store => next => action => {
     console.log(action);
@@ -10,9 +13,10 @@ const loggerMiddleware = store => next => action => {
 
 const reducers = {
     account
+    //与引入的一一对应
 };
 
-//第三方改造
+
 const middleware = applyMiddleware(
     loggerMiddleware,
     thunk,
