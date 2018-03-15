@@ -70,8 +70,8 @@ const TabOptions = (tabBarTitle,icon,focusIcon) => {
     const  tabBarIcon=({ focused, tintColor }) => {
         return <Ionicons name={focused?focusIcon:icon} size={25} color={tintColor} />;
     };
-    const tabBarOnPress=(e)=>{ console.log(e)};
-    return {tabBarLabel,tabBarIcon,tabBarOnPress}
+
+    return {tabBarLabel,tabBarIcon}
 };
 
 
