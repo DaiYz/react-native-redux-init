@@ -7,26 +7,40 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.0.0",
-    "react-native": "0.51.0",
-    "react-native-deprecated-custom-components": "github:facebookarchive/react-native-custom-components",
-    "react-native-elements": "^0.19.0",
-    "react-native-linear-gradient": "^2.4.0",
-    "react-native-vector-icons": "^4.5.0",
-    "react-navigation": "^1.0.3",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-gesture-handler": "^1.0.12",
+    "react-native-splash-screen": "^3.1.1",
+    "react-native-svg": "^6.3.1",
+    "react-native-svg-iconfont": "^1.0.4",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^3.0.8",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1",
+    "redux-persist": "5.6.12",
     "redux-thunk": "^2.2.0",
     "uuid": "^3.2.1"
   },
   "devDependencies": {
-    "babel-jest": "22.2.0",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "22.2.1",
-    "react-test-renderer": "16.0.0"
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3",
+    "standard": "^12.0.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "react-devtools-core": "3.4.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ]
   }
 }
