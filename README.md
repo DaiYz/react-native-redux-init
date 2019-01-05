@@ -1,4 +1,4 @@
-# react-native + redux + react-navigation的脚手架
+# react-native + redux + react-navigation
 
 ## Git clone 
 
